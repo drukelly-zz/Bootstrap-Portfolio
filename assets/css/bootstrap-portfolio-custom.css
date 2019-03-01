@@ -7,6 +7,7 @@
   --white: #fff;
 }
 
+/* HTML + Layout */
 html,
 body {
   height: 100%;
@@ -15,11 +16,44 @@ body {
 body {
   background: url(../images/ignasi_pattern_s.png) repeat;
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   flex-direction: column;
+}
+
+.no-padding [class*="col"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .content {
   flex: 1 0 auto;
+}
+
+section {
+  margin-top: 2em;
+  margin-bottom: 1.25em;
+}
+
+section .bg-light {
+  padding: 15px;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6,
+.navbar-brand {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+}
+
+section h2 {
+  border-bottom: 2px solid var(--gray);
+  color: var(--teal);
+  padding-bottom: .33em;
+  margin-bottom: .75em;
+}
+
+section .col-8 p {
+  padding-right: 1.75em;
 }
 
 /* Nav Bar Overrides */
@@ -34,9 +68,10 @@ body {
 .navbar-light .navbar-brand {
   background-color: var(--teal);
   color: var(--white);
-  padding: .5em 1em;
-  transition: color .5s ease-in-out;
+  font-size: 2em;
+  padding: .5em;
 }
+
 .navbar-light .navbar-brand:hover {
   color: var(--light-gray);
 }
