@@ -1,0 +1,59 @@
+/* Color Variables */
+:root {
+  --gray: #ccc;
+  --light-gray: #ddd;
+  --slate: #777;
+  --teal: #49aaa5;
+  --white: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url(../images/ignasi_pattern_s.png) repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+/* Nav Bar Overrides */
+.navbar {
+  padding: 0;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+  background-color: var(--teal);
+  color: var(--white);
+  padding: .5em 1em;
+  transition: color .5s ease-in-out;
+}
+.navbar-light .navbar-brand:hover {
+  color: var(--light-gray);
+}
+
+.nav-item {
+  border-left: 1px solid var(--gray);
+  line-height: .5;
+}
+
+.nav-item:first-child {
+  border-left: none;
+}
+
+/* Footer  */
+footer {
+  border-top: 5px solid var(--teal);
+  color: var(--gray);
+  padding: 1em 0 2em;
+  text-align: center;
+}
