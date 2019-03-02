@@ -31,11 +31,20 @@ body {
 
 section {
   margin-top: 2em;
-  margin-bottom: 1.25em;
+  margin-bottom: 4em;
 }
 
 section .bg-light {
-  padding: 15px;
+  padding: 3em;
+}
+
+.card-link {
+  color: var(--teal);
+}
+
+.card-link:hover {
+  color: var(--gray);
+  opacity: .75;
 }
 
 /* Typography */
@@ -50,10 +59,6 @@ section h2 {
   color: var(--teal);
   padding-bottom: .33em;
   margin-bottom: .75em;
-}
-
-section .col-8 p {
-  padding-right: 1.75em;
 }
 
 /* Nav Bar Overrides */
