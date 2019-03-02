@@ -61,6 +61,12 @@ section h2 {
   margin-bottom: .75em;
 }
 
+/* Button Primary Override  */
+.btn.btn-primary {
+  background-color: var(--teal);
+  border-color: var(--teal);
+}
+
 /* Nav Bar Overrides */
 .navbar {
   padding: 0;
